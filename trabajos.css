@@ -1,0 +1,441 @@
+/* =========================
+   CONFIGURACIÓN GENERAL
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f5f7;
+    color: #172333;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* =========================
+   ENCABEZADO
+========================= */
+
+.encabezado {
+    min-height: 480px;
+
+    color: white;
+
+    background-image:
+        linear-gradient(
+            rgba(10, 25, 40, 0.75),
+            rgba(10, 25, 40, 0.80)
+        ),
+        url("imagenes/fondoinformatica.png");
+
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* =========================
+   BARRA
+========================= */
+
+.barra {
+    width: 90%;
+
+    margin: auto;
+
+    padding-top: 25px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+
+/* LOGO */
+
+.logo {
+    width: 70px;
+    height: 70px;
+
+    border: 3px solid white;
+
+    border-radius: 50%;
+
+    background-color: rgba(20, 45, 70, 0.9);
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    line-height: 1;
+}
+
+.logo span {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.logo strong {
+    font-size: 25px;
+}
+
+
+/* MENU */
+
+nav {
+    display: flex;
+
+    gap: 30px;
+}
+
+nav a {
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #65c1f5;
+}
+
+
+/* =========================
+   TITULO
+========================= */
+
+.titulo {
+    width: 90%;
+
+    max-width: 1000px;
+
+    margin: auto;
+
+    text-align: center;
+
+    padding-top: 85px;
+}
+
+.titulo > p:first-child {
+    color: #67c2f5;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 20px;
+}
+
+.titulo h1 {
+    font-size: clamp(50px, 8vw, 90px);
+
+    line-height: 0.95;
+
+    letter-spacing: -2px;
+
+    margin-bottom: 25px;
+}
+
+.titulo h1 span {
+    color: #5bc0f3;
+}
+
+.descripcion {
+    font-size: 19px;
+
+    line-height: 1.5;
+
+    max-width: 600px;
+
+    margin: auto;
+}
+
+
+/* =========================
+   PROYECTOS
+========================= */
+
+.proyectos {
+    padding: 80px 7%;
+}
+
+
+/* TITULO DE SECCIÓN */
+
+.encabezado-seccion {
+    text-align: center;
+
+    margin-bottom: 50px;
+}
+
+.encabezado-seccion p {
+    color: #1687d4;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 12px;
+}
+
+.encabezado-seccion h2 {
+    font-size: 40px;
+}
+
+
+/* =========================
+   GRID DE TRABAJOS
+========================= */
+
+.contenedor-trabajos {
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 22px;
+}
+
+
+/* =========================
+   TARJETAS
+========================= */
+
+.trabajo {
+    background-color: white;
+
+    min-height: 280px;
+
+    padding: 28px;
+
+    border-radius: 10px;
+
+    position: relative;
+
+    box-shadow: 0 5px 18px rgba(0,0,0,0.08);
+
+    border-top: 4px solid #1687d4;
+
+    transition: 0.3s;
+}
+
+.trabajo:hover {
+    transform: translateY(-7px);
+
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+
+/* NUMERO */
+
+.numero {
+    color: #c5ced7;
+
+    font-size: 14px;
+
+    font-weight: bold;
+}
+
+
+/* ICONO */
+
+.icono {
+    font-size: 38px;
+
+    margin-top: 20px;
+
+    margin-bottom: 18px;
+}
+
+
+/* TITULO */
+
+.trabajo h3 {
+    font-size: 21px;
+
+    margin-bottom: 12px;
+}
+
+
+/* DESCRIPCIÓN */
+
+.trabajo p {
+    color: #69747e;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+}
+
+
+/* BOTÓN */
+
+.trabajo a {
+    display: inline-block;
+
+    margin-top: 22px;
+
+    color: #1687d4;
+
+    font-size: 13px;
+
+    font-weight: bold;
+}
+
+.trabajo a:hover {
+    color: #0d5795;
+}
+
+
+/* =========================
+   VOLVER
+========================= */
+
+.volver {
+    background-color: #e8edf2;
+
+    text-align: center;
+
+    padding: 70px 10%;
+}
+
+.volver h2 {
+    font-size: 30px;
+
+    margin-bottom: 20px;
+}
+
+.volver a {
+    display: inline-block;
+
+    padding: 14px 25px;
+
+    background-color: #1687d4;
+
+    color: white;
+
+    border-radius: 5px;
+
+    font-weight: bold;
+
+    font-size: 14px;
+}
+
+.volver a:hover {
+    background-color: #0d659f;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background-color: #0c1722;
+
+    color: #aeb9c4;
+
+    text-align: center;
+
+    padding: 35px 10%;
+
+    line-height: 1.7;
+}
+
+.logo-footer {
+    color: white;
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+    margin-bottom: 10px;
+}
+
+.logo-footer strong {
+    color: #55b7ee;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 950px) {
+
+    .contenedor-trabajos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* =========================
+   CELULAR
+========================= */
+
+@media (max-width: 600px) {
+
+    .barra {
+        flex-direction: column;
+
+        gap: 20px;
+    }
+
+    nav {
+        gap: 18px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    .titulo {
+        padding-top: 60px;
+    }
+
+    .titulo h1 {
+        font-size: 48px;
+    }
+
+    .descripcion {
+        font-size: 16px;
+    }
+
+    .proyectos {
+        padding: 60px 7%;
+    }
+
+    .encabezado-seccion h2 {
+        font-size: 32px;
+    }
+
+    .contenedor-trabajos {
+        grid-template-columns: 1fr;
+    }
+
+}
