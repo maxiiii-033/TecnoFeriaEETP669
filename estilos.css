@@ -949,5 +949,23 @@ footer {
 
         gap: 20px;
     }
+    /* CORRECCIÓN PARA CELULAR - DESMALVINIZACIÓN */
+@media (max-width: 600px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .destacada {
+        overflow: hidden;
+    }
+
+    .destacada h2 span {
+        display: block;
+        font-size: 8.5vw;
+        white-space: normal;
+    }
+
+}
 
 }
